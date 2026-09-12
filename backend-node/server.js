@@ -18,6 +18,7 @@ const adminCabTypesRouter = require("./routes/adminCabTypes");
 const distanceRouter = require("./routes/distance");
 
 const app = express();
+app.set("trust proxy", 1);
 const PORT = process.env.PORT || 4000;
 
 // In production, set ALLOWED_ORIGIN to your deployed frontend's URL
