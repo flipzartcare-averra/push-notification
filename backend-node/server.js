@@ -18,9 +18,9 @@ const adminCabTypesRouter = require("./routes/adminCabTypes");
 const distanceRouter = require("./routes/distance");
 
 const app = express();
-app.set("trust proxy", 1);
-const PORT = process.env.PORT || 4000;
 
+const PORT = process.env.PORT || 4000;
+app.set("trust proxy", 1);
 // In production, set ALLOWED_ORIGIN to your deployed frontend's URL
 // (e.g. https://averra.vercel.app). Left unset, this allows all
 // origins, which is fine for local development only.
